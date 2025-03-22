@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "codetango"
+version = "0.1.0"
+description = "Synchronous checkpoints server and client API to validate equality of two programs"
+readme = "README.md"
+authors = [
+    {name = "CodeTango Contributors", email = "example@example.com"}
+]
+license = {text = "MIT"}
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Software Development :: Debuggers",
+    "Topic :: Software Development :: Testing",
+]
+keywords = ["debugging", "testing", "synchronization", "barriers", "checkpoints"]
+requires-python = ">=3.7"
+
+[project.scripts]
+codetango = "codetango:main"
+
+[project.urls]
+"Homepage" = "https://github.com/dmikushin/codetango"
+"Bug Tracker" = "https://github.com/dmikushin/codetango/issues"

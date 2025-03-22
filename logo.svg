@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 250">
+  <!-- Background -->
+  <rect width="500" height="250" fill="#1E1E2E" rx="15" ry="15"/>
+  
+  <!-- Dancing code blocks -->
+  <g transform="translate(70, 70) scale(0.9)">
+    <!-- Left dancer (C++ block) -->
+    <g transform="rotate(-15)">
+      <rect x="0" y="0" width="120" height="160" fill="#8839EF" rx="10" ry="10" opacity="0.9"/>
+      <text x="60" y="50" font-family="Consolas, monospace" font-size="18" fill="white" text-anchor="middle">C++</text>
+      <line x1="20" y1="70" x2="100" y2="70" stroke="white" stroke-width="2"/>
+      <line x1="20" y1="90" x2="80" y2="90" stroke="white" stroke-width="2"/>
+      <line x1="20" y1="110" x2="90" y2="110" stroke="white" stroke-width="2"/>
+      <line x1="20" y1="130" x2="70" y2="130" stroke="white" stroke-width="2"/>
+    </g>
+    
+    <!-- Right dancer (Python block) -->
+    <g transform="translate(180, 30) rotate(15)">
+      <rect x="0" y="0" width="120" height="160" fill="#40A02B" rx="10" ry="10" opacity="0.9"/>
+      <text x="60" y="50" font-family="Consolas, monospace" font-size="18" fill="white" text-anchor="middle">Python</text>
+      <line x1="20" y1="70" x2="100" y2="70" stroke="white" stroke-width="2"/>
+      <line x1="20" y1="90" x2="80" y2="90" stroke="white" stroke-width="2"/>
+      <line x1="20" y1="110" x2="90" y2="110" stroke="white" stroke-width="2"/>
+      <line x1="20" y1="130" x2="70" y2="130" stroke="white" stroke-width="2"/>
+    </g>
+    
+    <!-- Connecting sync points (barriers) -->
+    <circle cx="90" cy="90" r="8" fill="#FE640B"/>
+    <circle cx="210" cy="90" r="8" fill="#FE640B"/>
+    <path d="M90,90 Q150,65 210,90" stroke="#FE640B" stroke-width="3" fill="none" stroke-dasharray="5,5"/>
+    
+    <circle cx="70" cy="130" r="8" fill="#04A5E5"/>
+    <circle cx="190" cy="130" r="8" fill="#04A5E5"/>
+    <path d="M70,130 Q150,105 190,130" stroke="#04A5E5" stroke-width="3" fill="none" stroke-dasharray="5,5"/>
+  </g>
+
+  <!-- Logo text -->
+  <text x="250" y="210" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">CodeTango</text>
+  <text x="250" y="235" font-family="Arial, sans-serif" font-size="16" fill="#CCCCCC" text-anchor="middle">Synchronized Checkpoint Verification</text>
+</svg>
